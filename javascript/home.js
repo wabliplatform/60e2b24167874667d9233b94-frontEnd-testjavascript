@@ -1,4 +1,156 @@
-let apiWabliApi = new TempApi.WabliApi();import TempApi from '../src/index';window.onload = () => {apiWabliApi.getAllwabli((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("i7gwk").querySelectorAll( "[dataitem='true']" )].filter(
+let apiWabliApi = new TempApi.WabliApi();import TempApi from '../src/index';document.getElementById('idygw').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("idygw")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{   location.href= '/home' ;}}});};document.getElementById('i3zuh').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("i3zuh")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('icxcrr').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("icxcrr")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('iqhmmk').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("iqhmmk")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('i6w3zg').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("i6w3zg")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ixkcmj').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("ixkcmj")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('iea0l').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("iea0l")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ivx7a').onclick = (event) => {
+    event.preventDefault();
+    let wabliId = window.location.pathname.replace('/home/','');
+      if(wabliId === '/home' || wabliId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("ivx7a")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            wabliId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiWabliApi.deletewabli( wabliId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};window.onload = () => {apiWabliApi.getAllwabli((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("i7gwk").querySelectorAll( "[dataitem='true']" )].filter(
     (element, index, array) =>
     !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
   );const map = new Map();  data.forEach((item,i) => {
